@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+	<script>
+		//------exercise 1------//
+		var recipe={
+			'title':'golibaje',
+			'servings':3,
+			'ingredients':['salt','flour','oil']
+		}
+		console.log(recipe.title);
+		console.log('Servings:'+recipe.servings);
+		console.log('Ingredients:');
+		for(var i=0;i<recipe.ingredients.length;i++)
+		{
+			console.log(recipe.ingredients[i]);
+		}
+		
+		//-------exercise 2------//
+		var books=[{
+			'title':'The Hobbit',
+			'author':'J.R.R.Tolkein',
+			'alreadyread': false
+		},
+		{
+			'title':'Harry Potter',
+			'author':'J.K Rowling',
+			'alreadyread': true
+		},
+		{
+			'title':'Five point someone',
+			'author':'Chetan Bhagat',
+			'alreadyread': false
+		}
+		]
+
+		for(var i=0;i<books.length;i++)
+		{
+			console.log('"'+ books[i].title +'" by '+books[i].author)
+			if(books[i].alreadyread)
+			{
+				console.log("you have read this book");
+			}
+			else
+			{
+				console.log("you have not read this book");
+			}
+		}
+
+	</script>
+</body>
+</html>

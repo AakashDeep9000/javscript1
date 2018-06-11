@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+	<script>
+	//-----exercise 1-------//
+	var newObj= new Object();
+	newObj.prop="property";
+	newObj.newmethod=function()
+	{
+		console.log(3+5);
+	}  
+
+	//-----exercise 2-------//
+	var litObj={
+		litprop:"literal property",
+		litmethod: function () 
+		{
+			console.log("literal");
+		}
+	}
+
+	//-----exercise 3------//
+	function constObj(){
+		this.constprop="constructor property";
+	} 
+	constObj.prototype.constmethod=function(){
+		console.log("constructor");
+	}
+	var newOne= new constObj();    
+</script>
+</body>
+</html>
